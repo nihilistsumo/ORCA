@@ -3,7 +3,7 @@ import argparse
 import torch
 import pandas as pd
 from ir_measures import AP, nDCG, Rprec
-from neural_ranking import eval_mono_bert_ranking_full, prepare_data, Mono_SBERT_Clustering_Reg_Model
+from core.neural_ranking import eval_mono_bert_ranking_full, prepare_data, Mono_SBERT_Clustering_Reg_Model
 
 
 def do_eval(model_dir, art_qrels, qrels, paratext_tsv, output_dir, output_file_prefix='val'):
